@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hard Rock</title>
+
+    <!-- To show Website's logo on the browser's tab -->
+    <link rel="shortcut icon" type="image/x-icon" href="../Media/electric-guitar.ico" />
+    <!-- Stylesheet to include the navigation bar section -->
+    <link rel="stylesheet" type="text/css" href="../css/navigation_bar_stylesheet.css">
+    <!-- it is connected to two stylesheets -->
+    <link rel="stylesheet" type="text/css" href="../css/second_page_stylesheet.css"><!-- this is the main stylesheet -->
+    <!-- desktop first approach is used for the same. -->
+    <link rel="stylesheet" type="text/css" href="../css/second_page_responsive.css">
+    <!-- Stylesheet to include the footer section which contains a fixed player -->
+    <link rel="stylesheet" type="text/css" href="../css/footer_stylesheet.css">
+    <!-- To include icons from fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Font style for website name -->
+    <link href='https://fonts.googleapis.com/css?family=Almendra SC' rel='stylesheet'>
+</head>
+<!-- body -->
+
+<body>
+    <!-- Navigation Bar -->
+<nav class="nav-bar">
+        <!-- Website's name & logo are placed in a div named title -->
+        <div class="title">
+            <div class="logo">
+                <img src="../Media/Nav_Bar/electric-guitar.svg">
+            </div>
+            <div class="website-name">
+                <h1>
+                    <a href="index.html" style="font-family: 'Almendra SC'; color: wheat">
+                        Hard Rock
+                    </a>
+                </h1>
+                <h4>
+                    <a href="index.html" style="color: rgb(168, 13, 13);">
+                    Music Studio
+                    </a>
+                </h4>
+            </div>
+        </div>
+        <!-- Div for favourites -->
+        <div class="fav">
+            <h4>
+                Favourites
+            </h4>
+        </div>
+        <!-- Search bar section -->
+        <div class="search-bar">
+            <div class="search-icon">
+                <!-- Magnifying glass icon -->
+                <i class="fas fa-search search-ico"></i>
+            </div>
+            <input type="text" placeholder="Search">
+            <div class="mic-icon">
+                <!-- Mic icon -->
+                <i class="fas fa-microphone mic-ico"></i>
+            </div>
+        </div>
+        <!-- Notification bell -->
+        <div class="bell">
+            <img src="../Media/Nav_Bar/alert.svg">
+
+        </div>
+        <!-- Div for profile picture -->
+        <div class="profile-pic">
+            <img src="../Media/Nav_Bar/profile.jpg">
+        </div>
+    </nav>
+    
+    <!-- Main section contains 2 sections. 1 is the center section containing the songs -->
+    <!-- 2nd section (side-section) contains the similar artists & recently played section -->
+    <main>
+        <!-- Center Section -->
+        <aside class="center-section">
+            <!-- This card represents the artist's name & info -->
+            <div class="main-card">
+                <div class=main-card-image>
+                    <!-- Added through css  -->
+                </div>
+                <!-- It contains the details, ranging from a small bio to number of followers -->
+                <div class="main-card-details">
+    
+                    <div class="card-description">
+                        <div class="song-name-main">
+                            <h1>Linkin Park</h1>
+                        </div>
+                        <div class="followers">
+                            55M Followers
+                        </div>
+                        <!-- Short description of the current artist -->
+                        <p class="desc">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to make a type specimen book.
+                        </p>
+                    </div>
+                    <!-- Two buttons are provided  -->
+                    <div class="main-card-buttons">
+                        <div class="btns">
+                            <button>Play All</button>
+                            <button>Follow</button>
+                        </div>
+                        <p>
+                            120 Tracks | 56 Albums
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- This is the playlist section below the Main artist's card -->
+            <div class="playlist-container">
+                
+                <!-- 1st song in the playlist -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            01
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/1.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Burn It Down
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2nd -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            02
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/2.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Numb
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3rd -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            03
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/3.jpeg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Battle Symphony
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            04
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/4.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Papercut
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            05
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/5.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Broken Pieces
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            06
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/6.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Shadow
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            07
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/7.jpeg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Castle Of Glass
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            08
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/8.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Crawling
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            09
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/9.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Somewhere I Belong
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10th -->
+                <div class="playlist-box">
+                    <div class="left-content">
+                        <div>
+                            10
+                        </div>
+                        <div>
+                            <img src="../Media/Right_Playlist/10.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>
+                                Mirage
+                            </h5>
+                            <p>
+                                Flume
+                            </p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        9:00
+                    </div>
+                    <div class="right-content">
+                        <div>
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <!-- Label PLaylist is added to display the right side content when the page is too small -->
+        <!-- Whenever the width of the page is decreased, Playlist option pops ups  -->
+        <!-- Upon clicking it we can see the right side section -->
+        <label for="Play-List-Button">Playlist<i class="fas fa-caret-down"></i></label>
+        <!-- Checkbox has been used to provide the ability to show & hide the right section -->
+        <input type="checkbox" id="Play-List-Button">
+
+        <aside class="side-section">
+           <!-- Since the same class is applicable to both the sections on the right side -->
+            <div class="shared">
+                <div class="section-heading">
+                    <h1>Similar Artists</h1>
+                    <div class="view-all-button">
+                        View All
+                    </div>
+                </div>
+                <!-- Contains the list of songs -->
+                <div class="list-container">
+                    <!-- Song 1 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="../Media/Right_Side_Artists/artist1.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <p class="artist-name">
+                                Flume
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="artist-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="../Media/Right_Side_Artists/artist2.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <p class="artist-name">
+                                Flume
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="artist-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="list-item">
+                        <div>
+                            <img src="../Media/Right_Side_Artists/artist3.jpg">
+                            <div class="play-btn">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div style="position: absolute; left:120px;">
+                            <h5>
+                                Mirage
+                            </h5>
+                            <p class="artist-name">
+                                Flume
+                            </p>
+                        </div>
+                        <div class="extra">
+                            <div>
+                                <i class="fas fa-ellipsis-h"></i>
+                            </div>
+                            <p class="artist-name">
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Recently Played Section -->
+                <div class="shared">
+                    <div class="section-heading">
+                        <h1>Recently Played</h1>
+                        <div class="view-all-button">
+                            View All
+                        </div>
+                    </div>
+                    <div class="list-container">
+                        <!-- Song 1 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    01
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/4.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    02
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/8.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    03
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/9.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    04
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/2.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    05
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/10.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    06
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/5.jpg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    07
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/3.jpeg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="playlist-box">
+                            <div class="left-content">
+                                <div>
+                                    08
+                                </div>
+                                <div>
+                                    <img src="../Media/Right_Playlist/7.jpeg">
+                                    <div class="play-btn">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5>
+                                        Mirage
+                                    </h5>
+                                    <p>
+                                        Flume
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="right-content">
+                                <div>
+                                    <i class="far fa-heart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+
+<!-- Footer is the ending part of the page -->
+    <!-- It contains a fixed player -->
+    <footer>
+        <div class="active-song-box">
+            <div id="song-image">
+                <img src="../Media/English/pain.jpg">
+            </div>
+            <!-- Song's name and singer -->
+            <div class="active-song-name">
+                <div>
+                    Pain by Ryan
+                </div>
+                <div>
+                    Ryan Jones
+                </div>
+            </div>
+            <div class="heart-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- Controls of the fixed player at the footer -->
+        <div class="active-player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="far fa-pause-circle" style="font-size:30px"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-sync-alt"></i></div>
+            </div>
+            <!-- Slider for sliding on the duration part -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- Total length of song -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- These are the icons on the right side of the footer -->
+        <div class="active-right-side">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-tv"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

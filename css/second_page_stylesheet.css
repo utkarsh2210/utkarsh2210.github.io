@@ -1,0 +1,303 @@
+/***************** Main Section ******************/
+main {
+	width: 100%;
+	padding: 0.5% 3.5%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+	transition: all ease-in-out 1s;
+}
+
+/*********** Center Section Part *************/
+
+.center-section {
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+}
+
+.center-section::-webkit-scrollbar {
+	display: none;
+}
+
+.side-section {
+	width: 28%;
+	height: 85vh;
+	z-index: 2;
+}
+
+.main-card {
+	height: 18vw;
+	width: 100%;
+	margin-top: 12px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(92, 5, 5);
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+
+.main-card-image {
+	margin-right: 5px;
+	height: 18vw;
+	width: 20vw;
+	background-image: linear-gradient(
+			transparent,
+			rgba(43, 47, 71, 0.75)
+		),
+		url("../Media/Pop_Artists/linkin.jpg");
+	background-size: cover;
+}
+
+.main-card-details {
+	width: 66%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 12px;
+	box-sizing: border-box;
+}
+
+.card-description,
+.main-card-buttons {
+	width: 100%;
+	height: max-content;
+}
+
+.song-name-main,
+.followers {
+	display: inline-block;
+}
+
+.song-name-main h1 {
+	font-size: 2vw;
+}
+
+.followers {
+	position: absolute;
+	right: 0%;
+	top: 5%;
+}
+
+.followers,
+.author {
+	font-size: 1.5vw;
+}
+
+.desc {
+	font-size: 1vw;
+}
+
+.main-card-buttons p {
+	font-size: 1vw;
+}
+.btns > button {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 0px;
+	height: 3vw;
+	width: 10vw;
+	color: white;
+	font-size: 1.2vw;
+}
+
+.btns > button:nth-child(1) {
+	background-image: linear-gradient(-27deg, grey 0%, black 100%);
+}
+
+.btns > button:nth-child(2) {
+	background-color: transparent;
+}
+
+.btns > button:nth-child(2):hover {
+	background-color: rgba(25, 25, 28, 0.75);
+}
+
+.playlist-container{
+	height: 118vh;
+}
+.playlist-box {
+	height: 60px;
+	box-sizing: border-box;
+	background-color: rgba(140, 29, 29,0.6);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 12px;
+}
+
+.playlist-box:hover {
+	background-color: #31323d;
+}
+
+.left-content {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	height: 100%;
+	padding: 0% 1%;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: auto;
+	height: 100%;
+}
+
+.right-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	height: 100%;
+	padding-right: 2%;
+}
+
+.left-content > div:nth-child(2) {
+	height: 100%;
+	min-width: 50px;
+	max-width: 50px;
+	margin: 0px 12% 0px 12%;
+	position: relative;
+}
+.left-content > div:nth-child(2) img {
+	width: 100%;
+	height: 100%;
+}
+.left-content > div:nth-child(3) p {
+	color: rgb(185, 185, 185);
+}
+
+.play-btn {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	opacity: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out 0.1s;
+}
+
+.play-btn:hover {
+	opacity: 0.8;
+}
+
+.left-content div p {
+	font-size: 14px;
+}
+
+.center {
+	font-size: 12px;
+	color: rgb(204, 209, 217);
+}
+
+.right-content {
+	color: rgb(204, 209, 217);
+}
+
+.right-content div:nth-child(2) {
+	margin-left: 27%;
+}
+ /*---------------------------------------------------------------------------------------*/
+
+ /***************** PlayList Button *****************/
+label {
+	display: none;
+	position: absolute;
+	right: 0%;
+	top: 15%;
+	box-shadow: 0px 0px 2px 1px white;
+	width: 100px;
+	padding: 4px;
+	z-index: 4;
+	font-size: 20px;
+	height: 22px;
+	text-align: center;
+	background-color: black;
+}
+
+label i{
+	margin-left: 4px;
+}
+
+/*Normally it is hidden*/
+label ~ input {
+	display: none;
+}
+
+/******** Right Side Section *********/
+.section-heading {
+	margin-top: 10px;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.section-heading div,
+.section-heading h1 {
+	display: inline-block;
+}
+.section-heading h1 {
+	font-size: 20px;
+}
+.section-heading div {
+	position: absolute;
+	bottom: 0%;
+	right: 0px;
+	font-size: 14px;
+}
+
+.list-container {
+	height: 34vh;
+	overflow: scroll;
+}
+
+.list-container::-webkit-scrollbar {
+	display: none;
+}
+
+.list-item {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.list-item:hover {
+	background-color: #31323d;
+}
+
+.list-item > div:nth-child(1) {
+	width: 100px;
+	height: 100%;
+	position: relative;
+}
+.list-item > div:nth-child(1) > img {
+	width: 100%;
+	height: 100%;
+}
+.artist-name {
+	font-size: 12px;
+	color: rgb(185, 185, 185);
+}
+.extra {
+	text-align: right;
+	height: 100%;
+}
+
+/*-----------------------------------------------------------------------------------------*/

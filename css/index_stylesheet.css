@@ -1,0 +1,633 @@
+
+hr {
+	width: 100%;
+	color: black;
+}
+/*********************** Main Section ********************/
+main {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0.5% 3.5%;
+	transition: all ease-in-out 1s;
+	box-sizing: border-box;
+}
+
+.center-section {
+	width: 70%;
+	height: 86vh;
+	overflow: scroll;
+}
+
+/*To hide center section's scroll bar*/
+.center-section::-webkit-scrollbar {
+	display: none;
+}
+
+/*Right side section*/
+.side-section {
+	width: 28%;
+	height: 86vh;
+}
+
+.carousel-box {
+	position: relative;
+	left: 9vw;
+	margin-top: 5%;
+}
+
+.carousel {
+	position: absolute;
+	width: 65%;
+	height: auto;
+	left: 2%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.carousel img {
+	height: 14vw;
+	width: 22.5vw;
+	border-radius: 5px;
+	transition: 0.2s;
+}
+
+.carousel img:nth-child(1) {
+	position: relative;
+	left: 40vw;
+	z-index: 2;
+}
+
+.carousel img:nth-child(2) {
+	z-index: 3;
+}
+
+.carousel img:nth-child(3) {
+	position: relative;
+	right: 40vw;
+	z-index: 1;
+}
+
+/* Animation effect for carousel */
+.carousel img:hover {
+	z-index: 4;
+	transform: scaleX(1.2) scaleY(1.2);
+}
+
+/*-----------------------------------------------------------------------------*/
+
+/****************** Latest Release Section **************/
+
+.latest-release {
+	position: relative;
+	top: 20vw;
+	height: auto;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.latest-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.content-box {
+	display: flex;
+	height: 100px;
+	width: 47%;
+	margin: 5px 0px;
+}
+
+.content-box img {
+	width: 100px;
+	height: 100px;
+	min-width: 50px;
+	min-height: 50px;
+}
+
+.content-box:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+
+.play-button {
+	width: 100px;
+	height: 100%;
+	position: relative;
+	top: -104%;
+	color: rgb(255, 255, 255, 0);
+	background-color: rgba(0, 0, 0, 0);
+	transition: all ease-in-out 0.2s;
+}
+
+.play-button:hover {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.song-name {
+	margin: auto 10%;
+}
+
+.song-name p{
+	font-size: 0.9rem;
+}
+
+.options {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	margin-left: auto;
+	margin-right: 2%;
+	margin-top: 2%;
+}
+
+.release-dropdown-part {
+	position: absolute;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 0px;
+	height: 0px;
+	top: 20px;
+	right: 0px;
+	z-index: 2;
+	box-shadow: 0px 0px 2px 1px black;
+	transition: all ease-in-out 0.2s;
+	overflow: hidden;
+}
+
+.dropdown-item p {
+	text-align: center;
+}
+
+.fa-ellipsis-h {
+	cursor: pointer;
+}
+
+/*THIS PART IS IMPORTANT FOR THE LIST TO BE DISPLAYED UPON CLICKING THE 3 DOTS IMAGE*/
+/*Input for the checkbox*/
+input[type="checkbox"] {
+	display: none;
+}
+
+/*Once the 3 dots are clicked, the button will be checked & list appears*/
+input[type="checkbox"]:checked ~ .release-dropdown-part {
+	height: auto;
+	opacity: 1;
+	padding: 3px 1px;
+	width: max-content;
+}
+
+/*--------------------------------------------------------------------------*/
+
+/*************** Popular Artists Section ******************/
+.popular-artists {
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 25vw;
+	box-sizing: border-box;
+}
+
+.popular-artist-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.popular-artists a div img {
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+}
+
+.popular-artists > div {
+	margin: 5px;
+	text-align: center;
+}
+
+.popular-artist-box > a > div {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.shade {
+	position: absolute;
+	display: flex;
+	width: 10vw;
+	min-width: 60px;
+	min-height: 60px;
+	height: 10vw;
+	border-radius: 50%;
+	background-color: rgb(0, 0, 0);
+	opacity: 0;
+	transition: opacity ease-in-out 0.1s;
+}
+
+.ic{
+	margin-top: 4.5vw;
+	margin-left: 4.5vw;
+}
+
+.shade:hover{
+	opacity: 0.5;
+}
+
+.popular-artists div p {
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*************** Moods Section **************/
+.moods {
+	position: relative;
+	top: 28vw;
+	width: 100%;
+	height: auto;
+	background-image: linear-gradient(
+		90deg,
+		#090909,
+		#7a1313,
+		#7a1313,
+		#090909		
+	);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+/* Station Logo */
+.stations {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	margin-right: 10px;
+}
+#yellow-div {
+	width: 9vw; 
+	height: 5vw;
+	background-color: yellow;
+}
+#orange-div {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 7vw; 
+	height: 7vw;
+	background-color: orange;
+}
+#yellow-orange-div {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 5vw; 
+	height: 9vw;
+	background-color: orangered;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#yellow-orange-div img {
+	width: 3vw;
+	height: 3vw;
+}
+
+#yellow-orange-div p {
+	font-size: 1vw;
+}
+
+.moods div img {
+	width: 6vw;
+	height: 6vw;
+	border-radius: 50%;
+}
+
+.moods-box-content {
+	height: 6vw;
+	width: 6vw;
+	text-align: center;
+	border-radius: 50%;
+}
+
+.moods-box-content p {
+	text-align: center;
+	position: relative;
+	top: -6.25vw;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	font-size: 1vw;
+	font-weight: 700;
+	background-image: linear-gradient(
+		0deg,
+		rgb(0, 0, 0) -70%,
+		rgba(0, 0, 0, 0)
+	);
+	transition: background-image 0.3s;
+	cursor: pointer;
+}
+
+.moods-box {
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+/*---------------------------------------------------------------------------------------*/
+
+/****************** Favourite Moods **********************/
+/* These are the favourite moods, Namely - Party, Road Trip and Electronic */
+.fav-moods {
+	height: auto;
+	width: 100%;
+	position: relative;
+	top: 30vw;
+	box-sizing: border-box;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.text-div {
+	width: 19.5vw;
+	height: 13vw;
+	min-width: 115px;
+	min-height: 78px;
+	margin: 5px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+.pic-div {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	transition: all ease-in-out 0.3s;
+}
+
+.fav-moods .text-div:nth-child(1) .pic-div {
+	background-image: url("../Media/Fav_Moods/party.jpg");
+}
+
+.fav-moods .text-div:nth-child(2) .pic-div {
+	background-image: url("../Media/Fav_Moods/electronic.jpg");
+}
+
+.fav-moods .text-div:nth-child(3) .pic-div {
+	background-image: url("../Media/Fav_Moods/road.jpeg");
+}
+
+.text-div:hover .pic-div {
+	transform: scale(1.2);
+}
+.text-div .pic-div span {
+	transform: scale(1);
+	transition: all ease-in-out 0.3s;
+}
+.text-div:hover .pic-div span {
+	transform: scale(0.6);
+}
+
+.pic-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.text-div .pic-div span {
+	color: white;
+	font-size: 1.8vw;
+}
+
+/*-----------------------------------------------------------------------*/
+
+/* Font-size for headings */
+.center-section h1{
+	font-size: 1.3em;
+}
+
+.side-section h1{
+	font-size: 1.3em;
+}
+
+/*---------------------------------------------------------------------------*/
+
+/******************* Language Section *************************/
+/* Similar for both English and Hindi */
+
+.lang {
+	height: auto;
+	width: 100%;
+	position: relative;
+	top: 31vw;
+	margin: 3vw 0px;
+	box-sizing: border-box;
+}
+
+.lang-box {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding: 0px 2px;
+}
+
+.lang-box div img {
+	border-radius: 10px;
+	width: 9vw;
+	height: 9vw;
+	min-width: 60px;
+	min-height: 60px;
+	transition: box-shadow ease-in-out 0.2s;
+}
+
+.lang-box div img:hover {
+	box-shadow: 0px 0px 10px 1px white;
+}
+
+.lang-box div {
+	margin: 2vw 0px;
+	width: 10vw;
+	min-width: 80px;
+}
+
+.lang-box div p:nth-child(2n + 1) {
+	font-size: 12px;
+	font-weight: lighter;
+}
+
+/* ------------------------------------------------------------------------------------- */
+
+/***************** Side Section With Other Songs ***********************/
+/* Play-List Button */
+label[for="Play-List-Button"] {
+	display: none;
+	position: absolute;
+	text-align: center;
+	right: 0%;
+	top: 30%;
+	padding: 4px;
+	z-index: 4;
+	width: 100px;
+	font-size: 20px;
+	box-shadow: 0px 0px 2px 1px white;
+	background-color: black;
+}
+
+label i{
+	margin-left: 4px;
+}
+
+/*IMPORTANT PART, PLAY-LIST BUTTON BECOMES VISIBLE ONLY WHEN SCREEN SIZE IS DECREASED*/
+/* UPON CLICKING THE PLAYLIST BUTTON WE CAN TOGGLE THE PLAYLIST SECTION */
+label[for="Play-List-Button"]:checked ~ input {
+	display: none;
+}
+
+.heading {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	margin-bottom: 12%;
+}
+
+.heading h4 a {
+	text-decoration: none;
+	color: lightblue;
+}
+
+.queue-options {
+	position: fixed;
+	right: 4%;
+	top: 14%;
+	background-color: black;
+	width: 10%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	box-sizing: border-box;
+	z-index: 2;
+	opacity: 0;
+	transition: all ease-in-out 0.2s;
+	overflow: hidden;
+}
+
+#queue-box:target {
+	opacity: 1;
+	transform: scale(1);
+}
+.queue-options {
+	background-color: black;
+}
+.queue-options p {
+	text-align: center;
+}
+
+.playlist-container {
+	width: 100%;
+	height: 70vh;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	cursor: pointer;
+}
+
+.playlist-container::-webkit-scrollbar {
+	display: none;
+}
+
+.left-box {
+	display: flex;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	width: 70%;
+}
+.left-box > div:nth-child(3) {
+	margin-left: 12px;
+	width: 50%;
+	word-wrap: break-word;
+}
+
+.right-box {
+	position: relative;
+	bottom: 62%;
+	left: 90%;
+	width: min-content;
+	height: 20px;
+	color: white;
+	font-size: 20px;
+}
+
+.playlist-box {
+	width: 90%;
+	height: auto;
+	padding: 0px 1%;
+	box-sizing: border-box;
+	margin: 1%;
+	 transition: all ease-in-out 0.1s; 
+}
+
+
+.playlist-box:hover .fa-heart {
+	color: red;
+	transition: all ease-in-out 0.5s;
+	text-shadow: 0 0 5px red,
+    0 0 10px red,
+    0 0 20px red,
+    0 0 40px red,
+    0 0 80px red;
+}
+
+.playlist-box:hover {
+	box-shadow: 0px 0px 2px 1px white;
+}
+
+.shading {
+	width: 70px;
+	height: 70px;
+}
+
+.shading img {
+	width: 70px;
+	height: 70px;
+}
+
+.play-button2 {
+	width: 70px;
+	height: 100%;
+	position: relative;
+	top: -106%;
+	color: rgba(255, 255, 255, 0);
+	background-color: rgba(0, 0, 0, 0);
+	/*padding-top: 2%;*/
+	transition: all ease-in-out 0.2s;
+}
+
+.play-button2:hover {
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+/*---------------------------------------------------------------------------------------------*/

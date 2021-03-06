@@ -1,0 +1,146 @@
+body {
+	background-image: url(../Media/Background/back5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px;
+	font-family:  Arial, sans-serif;
+	color: white;
+}
+
+/*Margins removed from text elements to make it easier for use*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0px;
+}
+
+/*Removed underlines from links as it is not required*/
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/*****************Navigation Bar Section*****************/
+
+.nav-bar {
+	height: auto;
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+}
+
+.logo img {
+	height: 50px;
+	width: 55px;
+}
+
+.website-name{
+	margin-left: 5px;
+}
+
+.website-name h1{
+	font-family: 'Almendra SC'; 
+	color: wheat; 
+	text-shadow: 0 0 5px wheat,
+    0 0 10px wheat,
+    0 0 20px wheat,
+    0 0 40px wheat,
+    0 0 80px wheat,
+    0 0 90px wheat;
+}
+
+.website-name h4 {
+	color: rgb(168, 13, 13);
+}
+
+.title > div {
+	display: inline-block;
+	margin-top: 5px;
+}
+
+.fav{
+	margin-right: 28vw;	
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.fav:hover{
+	transform: scale(1.3);
+}
+
+.search-bar {
+	width: 20%;
+	position: relative;
+}
+
+/*To change the default input tag and apply styles as per requirement */
+.search-bar input {
+	width: 100%;
+	font-size: 1.1rem;
+	text-decoration: none;
+	border-radius: 18px;
+	border: none;
+	padding: 5px;
+	background-color: #171621;
+	font-weight: 450;
+	color: #cac7c7;
+	text-align: center;
+}
+
+.search-icon{
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	color: #cac7c7;
+	left: 5%;
+	top: 18%;
+}
+
+.mic-icon {
+	display: inline-block;
+	position: absolute;
+	width: min-content;
+	color: white;
+	right: 0%;
+	top: 18%;
+}
+
+/*Removed outline which comes when the input is clicked*/
+input:focus {
+	outline: none;
+}
+
+/*Animation effect for notification bell*/
+@keyframes shake {
+  0% { 
+  	transform: translate(1px, 1px); 
+  }
+
+  100% { 
+  	transform: translate(1px, -2px); 
+  }
+}
+
+.bell img {
+	width: 30px;
+	height: 30px;
+	animation: shake 0.5s;
+  	animation-iteration-count: infinite;
+}
+
+.profile-pic img {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+}
+
+/*--------------------------------------------------------------*/
