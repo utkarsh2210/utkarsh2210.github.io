@@ -385,15 +385,15 @@ input[type="checkbox"]:checked ~ .release-dropdown-part {
 }
 
 .fav-moods .text-div:nth-child(1) .pic-div {
-	background-image: url("../Media/Fav_Moods/party.jpg");
+	background-image: url("./party.jpg");
 }
 
 .fav-moods .text-div:nth-child(2) .pic-div {
-	background-image: url("../Media/Fav_Moods/electronic.jpg");
+	background-image: url("./electronic.jpg");
 }
 
 .fav-moods .text-div:nth-child(3) .pic-div {
-	background-image: url("../Media/Fav_Moods/road.jpeg");
+	background-image: url("./road.jpeg");
 }
 
 .text-div:hover .pic-div {

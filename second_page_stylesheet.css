@@ -47,7 +47,7 @@ main {
 			transparent,
 			rgba(43, 47, 71, 0.75)
 		),
-		url("../Media/Pop_Artists/linkin.jpg");
+		url("./linkin.jpg");
 	background-size: cover;
 }
 
